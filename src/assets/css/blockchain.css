@@ -1,0 +1,20 @@
+
+
+/* ✅ Tablet Screens (≤ 992px) */
+@media (max-width: 992px) {
+
+  .laptop-bg-animation{
+    scale:calc(0.8);
+    top: -90px;
+  }
+}
+
+/* ✅ Mobile Screens (≤ 576px) */
+@media (max-width: 576px) {
+
+
+  .laptop-bg-animation {
+    max-width: 90%;
+  }
+
+}

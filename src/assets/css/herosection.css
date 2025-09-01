@@ -1,0 +1,15 @@
+.quote-btn {
+  background: linear-gradient(45deg, #000000 0%, #000000 50%, #89c81d 50%, #679d09 100%);
+  background-size: 200% 200%;
+  background-position: left bottom;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-position 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.quote-btn:hover {
+  background-position: right top; /* moves the gradient diagonally */
+  /* transform: rotate(45deg); */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}

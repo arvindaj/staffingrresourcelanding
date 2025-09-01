@@ -1,0 +1,48 @@
+/* Bootstrap handles spacing & responsive, this handles animation only */
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-reverse {
+  animation: marqueeReverse 20s linear infinite;
+}
+.logo-img {
+  width: 150px;
+  height: 80px;
+  object-fit: contain; /* Keeps logo aspect ratio without stretching */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+/* Mobile screens */
+@media (max-width: 576px) {
+  .logo-img {
+    width: 70px;   /* smaller width */
+    height: 35px;  /* smaller height */
+    margin: 0 8px; /* reduce spacing */
+  }
+
+  .marquee, 
+  .marquee-reverse {
+    animation-duration: 15s; /* make it slightly faster on small screens */
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  .logo-img {
+    width: 90px;
+    height: 45px;
+    margin: 0 10px;
+  }
+}

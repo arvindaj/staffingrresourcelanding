@@ -1,0 +1,89 @@
+.service-card {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  color: #28a745; /* Green Accent */
+}
+
+
+.section-heading {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  font-style: normal;   /* "Regular" = normal */
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+}
+.section-subtext {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0;
+  text-align: center;
+}
+.service-desc {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  font-style: normal;   /* Regular = normal */
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.service-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;          /* SemiBold */
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+/* ✅ Responsive for Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-subtext {
+    font-size: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Responsive for Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-subtext {
+    font-size: 0.9rem;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}

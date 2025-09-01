@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', sans-serif,'Libre Franklin';
+}
+
+body, p, span, li {
+  font-family:  sans-serif, 'Libre Franklin';
+}
+
+
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+}

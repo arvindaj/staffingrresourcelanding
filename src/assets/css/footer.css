@@ -1,0 +1,31 @@
+.address-section {
+  line-height: 1.4;
+}
+
+.flag-icon {
+  width: 28px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.phone-number {
+  color: #8EC440;
+  font-weight: 500;
+}
+
+/* Footer link hover color */
+.list-ftr:hover,
+.list-ftree:hover {
+  color: #8ec440 !important;
+  text-decoration: none; /* keep it clean */
+}
+
+
+
+@media (max-width: 576px) {
+  .flag-icon {
+    width: 22px;
+    margin-right: 8px;
+  }
+}

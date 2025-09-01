@@ -1,0 +1,52 @@
+.join-now-btn {
+  background-color: #f8f9fa; /* Bootstrap light */
+  color: #000;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-now-btn:hover {
+  background-color: #8FDC24;
+  color: #f8f9fa;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* ===== Tablet Screen Styles (768px to 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust card spacing */
+  .portfolio-section .card {
+    margin-bottom: 20px;
+  }
+
+  /* Resize headings for tablets */
+  .portfolio-section h1,
+  .portfolio-section h2 {
+    font-size: 1.8rem !important;
+    text-align: center;
+  }
+
+  /* Center images on tablet */
+  .portfolio-section img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Adjust padding for tablet view */
+  .portfolio-section .card-body {
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  /* Optional: Stack inner row for blog section vertically */
+  .portfolio-section .row.g-3 > .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+

@@ -1,0 +1,137 @@
+/* 🌐 Base (Desktop Default) */
+.iot-bg {
+  background: url("../img/bussinessedit.png") no-repeat center center/cover; 
+  min-height: 140vh;
+  width: 100%;
+  color: #070707;
+  position: relative;
+  z-index: 1;
+}
+
+/* ✅ Text Defaults */
+.iot-bg p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.iot-bg h5 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  position: absolute;
+  color: #fff;
+}
+
+.icon-left {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+/* 📱 Mobile Small (≤ 320px) */
+@media (max-width: 320px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 90vh;
+  }
+  .iot-bg h5 { font-size: 16px; }
+  .iot-bg p { font-size: 13px; }
+}
+
+/* 📱 Mobile Medium (321px – 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 80vh;
+  }
+  .iot-bg h5 { font-size: 16px; }
+  .iot-bg p { font-size: 13px; }
+}
+
+/* 📱 Mobile Large (481px – 720px) */
+@media (min-width: 481px) and (max-width: 720px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 90vh;
+  }
+  .iot-bg h5 { font-size: 17px; }
+  .iot-bg p { font-size: 14px; }
+}
+
+/* 📱 Tablets (721px – 767px) */
+@media (min-width: 721px) and (max-width: 767px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 90vh;
+  }
+  .iot-bg h5 { font-size: 18px; text-align: center; }
+  .iot-bg p { font-size: 14px; text-align: center; }
+}
+
+/* 📱 iPad Mini Portrait (744px – 819px) */
+@media (min-width: 744px) and (max-width: 819px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 75vh;
+  }
+  .iot-bg h5 { font-size: 19px; text-align: center; margin-top: 1rem; }
+  .iot-bg p { font-size: 15px; line-height: 1.5; text-align: center; padding: 0 2rem; }
+  .icon-left { width: 22px; height: 22px; margin-right: 6px; }
+}
+
+/* 📱 iPad Air Portrait (820px – 912px) */
+@media (min-width: 820px) and (max-width: 912px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 70vh;
+  }
+  .iot-bg h5 { font-size: 20px; text-align: center; margin-top: 1rem; }
+  .iot-bg p { font-size: 15px; line-height: 1.5; text-align: center; padding: 0 2rem; }
+  .icon-left { width: 24px; height: 24px; margin-right: 8px; }
+}
+
+/* 💻 iPad Mini Landscape (1000px – 1080px) */
+@media (min-width: 1000px) and (max-width: 1080px) {
+  .iot-bg {
+    background-position: center;
+    min-height: 65vh;
+  }
+  .iot-bg h5 { font-size: 21px; text-align: left; margin-top: 1.5rem; }
+  .iot-bg p { font-size: 15px; line-height: 1.6; text-align: left; padding: 0 3rem; }
+  .icon-left { width: 24px; height: 24px; }
+}
+
+/* 💻 iPad Pro Portrait (1081px – 1199px) */
+@media (min-width: 1081px) and (max-width: 1199px) {
+  .iot-bg {
+    background-position: top;
+    min-height: 130vh;
+  }
+  .iot-bg h5 { font-size: 22px; text-align: center; margin-top: 1.5rem; }
+  .iot-bg p { font-size: 16px; line-height: 1.6; text-align: center; padding: 0 3rem; }
+  .icon-left { width: 26px; height: 26px; }
+}
+
+/* 💻 iPad Pro Landscape (1200px – 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .iot-bg {
+    background-position: center;
+    min-height: 70vh;
+  }
+  .iot-bg h5 { font-size: 24px; text-align: left; margin-top: 2rem; }
+  .iot-bg p { font-size: 16px; line-height: 1.6; text-align: left; padding: 0 4rem; }
+  .icon-left { width: 28px; height: 28px; }
+}
+
+/* 💻 Desktop (≥ 1400px) */
+@media (min-width: 1400px) {
+  .iot-bg {
+    background-position: center;
+    min-height: 180vh;
+  }
+}

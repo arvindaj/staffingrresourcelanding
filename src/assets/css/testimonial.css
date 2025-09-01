@@ -1,0 +1,39 @@
+/* Main card styling */
+.testimonial-card {
+  transition: 0.3s;
+}
+
+/* Image rounded with responsive max height */
+.testimonial-img {
+  max-height: 350px;
+  border-radius: 20px;
+}
+
+/* Tablet view adjustments */
+@media (max-width: 992px) {
+  .testimonial-img {
+    max-height: 380px;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+  .testimonial-card {
+    text-align: center;
+    padding: 20px !important;
+  }
+
+  .testimonial-img {
+    max-height: 340px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card p,
+  .testimonial-card h2,
+  .testimonial-card h6 {
+    font-size: 0.9rem;
+  }
+
+  
+}

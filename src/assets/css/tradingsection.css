@@ -1,0 +1,42 @@
+/* Default (Desktop / Large screens) */
+.tradingesay {
+  width: 50%;
+  left: 85%;
+  top: 40%;
+  position: absolute; /* ensure overlay is positioned correctly */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .tradingesay {
+    width: 40%;
+    left: 80%;
+    top: 45%;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .tradingesay {
+    width: 60%;   /* make it bigger so it’s visible */
+    left: 50%;    /* center horizontally */
+    top: 55%;     /* adjust vertically */
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+/* Mobile (up to 767px) */
+@media (max-width: 564px) {
+  .tradingesay {
+    width: 30%;   /* make it bigger so it’s visible */
+    left: 80%;    /* center horizontally */
+    top: 45%;     /* adjust vertically */
+    transform: translate(-50%, -50%);
+  }
+
+}

@@ -1,0 +1,27 @@
+/* Smooth float for main image */
+.mainImgAnim {
+  animation: floatMain 4s ease-in-out infinite;
+}
+
+@keyframes floatMain {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Gentle left-right swing for side image */
+.sideImgAnim {
+  animation: floatSide 5s ease-in-out infinite;
+}
+
+@keyframes floatSide {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}

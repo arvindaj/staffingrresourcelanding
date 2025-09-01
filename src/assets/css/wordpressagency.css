@@ -1,0 +1,9 @@
+.learn-more-link {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-more-link:hover {
+  color: #8FDC24 !important;
+  text-decoration: underline;
+}
