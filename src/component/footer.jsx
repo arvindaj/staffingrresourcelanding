@@ -167,7 +167,7 @@ const Footer = () => {
  
         <div className="d-flex flex-lg-row flex-column justify-content-between align-items-center mb-5">
             <div className="text-green ps-md-3">
-                <h2 className="fs-4">Our Wordpress Service industries</h2>
+                <h2 className="fs-4">Our Staffing & Resource  industries</h2>
             </div>
             <div className="linear-line "></div>
         </div>
