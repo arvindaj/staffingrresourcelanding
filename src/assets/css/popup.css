@@ -1,0 +1,288 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.reach-wrapper {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 60px 64px;
+}
+
+.reach-section {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 490px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reach-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px;
+}
+
+.reach-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.reach-left {
+  flex: 1;
+  color: #1e1e1e;
+}
+
+.reach-sub-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #535353;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.reach-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.green-dot {
+  background: #8ec440;
+}
+
+.reach-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #f5f5f5;
+  max-width: 450px;
+}
+
+.reach-para {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 400px;
+}
+
+.reach-form-card {
+  width: 420px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.reach-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reach-form input,
+.reach-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.phone-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.country-code {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+
+.phone-row input[type="tel"] {
+  flex: 1;
+}
+
+.reach-form button {
+  background: #1e1e1e;
+  border: none;
+  padding: 6px 24px;
+  border-radius: 50px;
+  color: #fff3f3;
+  font-weight: 600;
+  cursor: pointer;
+  margin: auto;
+  width: fit-content;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.reach-form button:hover {
+  transform: scale(105%);
+  background-color: #8ec440;
+}
+
+@media (min-width: 1400px) {
+  .reach-wrapper {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+  }
+}
+
+@media (max-width: 995px) {
+  .reach-section {
+    height: auto;
+    padding: 30px;
+  }
+
+  .reach-card {
+    padding: 30px;
+  }
+
+  .reach-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .reach-form-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .reach-title {
+    text-align: center;
+  }
+
+  .reach-left {
+    text-align: center;
+  }
+  .reach-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .reach-section {
+    padding: 20px 0px;
+  }
+  .reach-wrapper {
+    padding: 40px 20px;
+  }
+  .reach-title {
+    font-size: 24px;
+  }
+
+  .reach-para {
+    font-size: 13px;
+  }
+
+  .reach-form input,
+  .reach-form textarea {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .form-heading {
+    font-size: 16px;
+  }
+
+  .phone-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .country-code {
+    width: 100%;
+    background: #fff;
+    justify-content: space-between;
+  }
+
+  .phone-row input[type="tel"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .reach-card {
+    padding: 10px 10px;
+  }
+}

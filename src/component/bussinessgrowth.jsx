@@ -26,7 +26,7 @@ export default function BusinessGrowth() {
   return (
     <div className="container p-4">
       <div className="row align-items-center flex-column flex-md-row">
-        
+
         {/* Left Image */}
         <div className="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
           <div className="position-relative rounded overflow-hidden">
@@ -174,14 +174,20 @@ export default function BusinessGrowth() {
               </span>
             </li>
           </ul>
-
-          <button
-            className="btn btn-dark rounded-pill px-4 py-2 shadow-sm mt-lg-3 right-btn"
-            data-aos="flip-up"
-            data-aos-delay="500"
+          <a
+            href="https://www.pavalsoftware.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
           >
-            Explore Now
-          </button>
+            <button
+              className="btn btn-dark rounded-pill px-4 py-2 shadow-sm mt-lg-3 right-btn"
+              data-aos="flip-up"
+              data-aos-delay="500"
+            >
+              Explore Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

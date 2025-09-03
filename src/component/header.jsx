@@ -1,9 +1,13 @@
 import React from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import defaultLogo from '../assets/img/pavallogo.png';
 import '../assets/css/header.css';
-
+import { useState } from "react";
+import Popup from "../component/popup";
 const Headersection = () => {
+const [showModal, setShowModal] = useState(false);
+
      const loadTawk = () => {
   if (!window.Tawk_API) {
     const s1 = document.createElement("script");
@@ -17,6 +21,7 @@ const Headersection = () => {
   }
 };
     return (
+        <>
         <header className="header py-3 border-mobile-hide mb-md-0 animated-border">
             <div className="container-fluid">
                 <div className="row align-items-center">
@@ -106,7 +111,9 @@ const Headersection = () => {
                     <div className="col-6 col-lg-4 text-end">
                         <div className="d-flex align-items-center justify-content-end gap-3">
                             <div className="vr bg-dark me-2 d-none d-lg-block" style={{ height: "40px", opacity: 0.8 }}></div>
-                            <button className="btn btn-dark rounded-pill px-3 px-lg-4 py-2 quote-btn" onClick={loadTawk}>
+                            <button className="btn rounded-pill px-3 px-lg-4 py-2 quote-btn"
+                             onClick={() => setShowModal(true)}
+                            >
                                 Let's Talk
                             </button>
                         </div>
@@ -138,6 +145,8 @@ const Headersection = () => {
             <style jsx>{`
             `}</style>
         </header>
+       {showModal && <Popup onClose={() => setShowModal(false)}/>}
+        </>
     );
 };
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/painpointssection.css"; // custom CSS
 import AOS from "aos";
@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Frame4 from "../assets/img/Mask group1.svg"; // Left big image
 import Frame5 from "../assets/img/Mask group2.svg"; // Bottom-right
 import Frame6 from "../assets/img/Mask group3.svg"; // Top-right
+import Popup from "../component/popup";
 
 export default function PainPointsSection() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function PainPointsSection() {
     });
     AOS.refresh();
   }, []);
+   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="container my-5">
@@ -34,7 +36,7 @@ export default function PainPointsSection() {
             className="text-muted cardleftpara"
             data-aos="fade-up"
             data-aos-delay="200"
-            style={{ fontSize: "clamp(16px, 4vw, 18px)" }}
+            style={{ fontSize: "clamp(16px, 4vw, 16px)" }}
           >
             Our core competence lies in providing tailored CRM development
             services that revolutionize the sphere of customer relations. We
@@ -45,6 +47,7 @@ export default function PainPointsSection() {
             className="btn btn-dark rounded-pill px-4 py-2 shadow-sm right-btn"
             data-aos="zoom-in"
             data-aos-delay="400"
+            onClick={() => setShowModal(true)}
           >
             Get A Quote
           </button>
@@ -110,6 +113,8 @@ export default function PainPointsSection() {
           </div>
         </div>
       </div>
+      {showModal && <Popup onClose={() => setShowModal(false)} />}
     </div>
+    
   );
 }

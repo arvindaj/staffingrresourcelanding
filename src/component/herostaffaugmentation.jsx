@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/staffaugmentation.css"; // custom styles
 import AOS from "aos";
 import "aos/dist/aos.css";
-// Assets
+import Popup from "../component/popup";
 import laptopImg from "../assets/img/herostaffaugmentation.svg"; // laptop with screen
 import teamImg2 from "../assets/img/2staffaugmentation.svg"; // man on right
 
-const StaffAugmentation = () => {
+const 
+StaffAugmentation = () => {
+
+  const [showModal, setShowModal] = useState(false);
  useEffect(() => {
         AOS.init({
             duration: 1000,  // animation speed
@@ -21,6 +24,7 @@ const StaffAugmentation = () => {
 
 
     return (
+        <>
         <section className="py-lg-5 bg-white">
             <div className="container-fluid">
                 <div className="row align-items-center">
@@ -70,7 +74,8 @@ const StaffAugmentation = () => {
                                     Unlock Your Business’s Potential with Tailored Staffing
                                     Solutions
                                 </p>
-                                <button className=" right-btn px-4 py-2 shadow" data-aos="flip-up">
+                                <button className=" right-btn px-4 py-2 shadow" data-aos="flip-up"
+                                  onClick={() => setShowModal(true)}>
                                     Get Started
                                 </button>
 
@@ -80,6 +85,7 @@ const StaffAugmentation = () => {
                 </div>
             </div>
         </section>
+        {showModal && <Popup onClose={() => setShowModal(false)} />}</>
     );
 };
 
